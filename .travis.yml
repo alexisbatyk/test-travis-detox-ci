@@ -30,6 +30,5 @@ matrix:
         - pod deintegrate
         - pod install
         - cd ..
-        - travis_wait 30 mvn install
-        - detox build --configuration ios.release
+        - travis_wait 30 detox build --configuration ios.release
         - detox test --configuration ios.release --cleanup
