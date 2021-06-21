@@ -26,6 +26,7 @@ matrix:
         - yarn test
         - cd ios
         - gem update xcodeproj
+        - gem install cocoapods
         - pod deintegrate
         - pod install
         - cd ..
