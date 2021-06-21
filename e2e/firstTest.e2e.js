@@ -13,11 +13,15 @@ describe("Example", () => {
 
   it("should show hello screen after tap", async () => {
     await element(by.text("Say Hello")).tap();
-    await expect(element(by.text("Hello!!!"))).toBeVisible();
+    await waitFor(element(by.text("Hello!!!")))
+      .toBeVisible()
+      .withTimeout(5000);
   });
 
   it("should show world screen after tap", async () => {
     await element(by.id("world_button")).tap();
-    await expect(element(by.text("World!!!"))).toBeVisible();
+    await waitFor(element(by.text("World!!!")))
+      .toBeVisible()
+      .withTimeout(5000);
   });
 });

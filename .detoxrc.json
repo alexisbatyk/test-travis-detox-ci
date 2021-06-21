@@ -9,6 +9,11 @@
     "android": {
       "type": "android.apk",
       "binaryPath": "SPECIFY_PATH_TO_YOUR_APP_BINARY"
+    },
+    "ios.release": {
+      "type": "ios.app",
+      "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/pruebas1.app",
+      "build": "cd ios && xcodebuild -workspace pruebas1.xcworkspace -scheme 'pruebas1 - release' -sdk iphonesimulator -derivedDataPath ./build"
     }
   },
   "devices": {
@@ -29,6 +34,10 @@
     "ios": {
       "device": "simulator",
       "app": "ios"
+    },
+    "ios.release": {
+      "device": "simulator",
+      "app": "ios.release"
     },
     "android": {
       "device": "emulator",
