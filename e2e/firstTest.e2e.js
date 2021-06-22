@@ -13,7 +13,7 @@ describe("Example", () => {
 
   it("should show hello screen after tap", async () => {
     await element(by.text("Say Hello")).tap();
-    await waitFor(element(by.text("Hello!!!")))
+    await waitFor(element(by.text("Not Hello!!!")))
       .toBeVisible()
       .withTimeout(5000);
   });

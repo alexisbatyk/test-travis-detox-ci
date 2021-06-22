@@ -32,3 +32,4 @@ matrix:
         - cd ..
         - detox build --configuration ios.release | grep -vi warning | grep -vi "in file included from"
         - detox test --configuration ios.release --cleanup
+        - exit 0
