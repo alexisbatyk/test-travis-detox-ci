@@ -13,7 +13,7 @@
     "ios.release": {
       "type": "ios.app",
       "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/pruebas1.app",
-      "build": "cd ios && xcodebuild -quiet -workspace pruebas1.xcworkspace -scheme 'pruebas1 - release' -sdk iphonesimulator -derivedDataPath ./build > ./build-output.log"
+      "build": "cd ios && xcodebuild -quiet -workspace pruebas1.xcworkspace -scheme 'pruebas1 - release' -sdk iphonesimulator -derivedDataPath ./build"
     }
   },
   "devices": {
