@@ -30,6 +30,6 @@ matrix:
         - pod deintegrate
         - pod install
         - cd ..
-        - detox build --configuration ios.release | grep -vi warning | grep -vi "in file included from"
+        - detox build --configuration ios.release | grep -vi warning | grep -vi "in file included from" | grep -vi " note :" | grep -vi "deprecated" | grep -vi "@param"
         - detox test --configuration ios.release --cleanup
         - exit 0
